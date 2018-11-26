@@ -1,0 +1,11 @@
+<div class='container'>
+  <h1>Your Score!</h1>
+  <ul><%  @random_array.split(' ').each do |letter|%>
+    <li><div class='letter_box'> <%= letter %></div></li>
+    <% end %>
+  </ul>
+  <p><%= @score %></p>
+  <div>
+  <%= link_to 'Try again!', '/new', class: "btn btn-success"%>
+  </div>
+</div>
